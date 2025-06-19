@@ -1,0 +1,72 @@
+baseURL = 'https://jfiocchi.github.io'
+languageCode = 'en-us'
+title = 'J. Fiocchi - Academic Website'
+theme = 'PaperMod'
+
+[params]
+  env = "production"
+  description = "Academic website and research portfolio"
+  author = "J. Fiocchi"
+  
+  # Theme-specific settings
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  # Home page settings
+  homeInfoParams.Title = "Welcome to my academic website"
+  homeInfoParams.Content = "I am a researcher interested in [your research area]. This site contains my publications, research projects, and academic CV."
+
+  # Social icons
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/jfiocchi"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:your-email@domain.com"
+
+[menu]
+  [[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "publications"
+  name = "Publications"
+  url = "/publications/"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "cv"
+  name = "CV"
+  url = "/cv/"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 40
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "github"
